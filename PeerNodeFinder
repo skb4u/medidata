@@ -1,5 +1,3 @@
-
-
 /**
  * @author Saravanakumar Alavandar
  */
@@ -120,12 +118,12 @@ public class PeerNodeFinder {
                 return findNode(node.getSiblingNode(), name, level, peerLevel, Direction.LEVEL);
             }
 
+            // if this is the leaf node
             direction = Direction.UP;
 
         }
 
         if (direction == Direction.UP) {
-
 
             if (node.getSiblingNode() != null) {
                 return findNode(node.getSiblingNode(), name, level, peerLevel, Direction.LEVEL);
@@ -268,5 +266,3 @@ public class PeerNodeFinder {
         LEVEL
     }
 }
-
-
